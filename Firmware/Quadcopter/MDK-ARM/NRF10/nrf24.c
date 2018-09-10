@@ -15,14 +15,8 @@ void WirelessTask(void const * argument)
   {
 		    wire_time_ms = HAL_GetTick() - wire_time_last;
     wire_time_last = HAL_GetTick();
-	//	NRF24L01_RxPacket(buf_rx)
 		if(NRF24L01_RxPacket(buf_rx)== 0)
-			printf("0: %c 1: %c 2: %c\n",buf_rx[0],buf_rx[1],buf_rx[2]);
-			//if(buf_rx[0] == 's')
-			//	printf("s");
-			//if(buf_rx[1] == 's')
-			
-		
+			printf("0: %c 1: %c 2: %c\n",buf_rx[0],buf_rx[1],buf_rx[2]);	
 	    osDelayUntil(&wire_wake_time, 10);
   }
 }
