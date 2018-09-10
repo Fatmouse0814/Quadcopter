@@ -30,3 +30,5 @@ remoter\main.o: ../Inc/adc.h
 remoter\main.o: ../Inc/dma.h
 remoter\main.o: ../Inc/spi.h
 remoter\main.o: ../Inc/gpio.h
+remoter\main.o: .\NRF10\nrf24.h
+remoter\main.o: .\NRF10\sys.h
