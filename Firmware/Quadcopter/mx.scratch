@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-<ProjectName>D:\GIT\Quadcopter\Firmware\Quadcopter\\Quadcopter</ProjectName>
+<ProjectName>D:\FGIT\Quadcopter\Firmware\Quadcopter\\Quadcopter</ProjectName>
 <CMSIS>..\Drivers\CMSIS</CMSIS>
 <HAL_Driver>C:\Users\asus\STM32Cube\Repository\STM32Cube_FW_F4_V1.18.0\Drivers\CMSIS</HAL_Driver>
 

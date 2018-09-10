@@ -57,6 +57,7 @@
 
 /* USER CODE BEGIN Includes */
 #include "nrf24.h"
+#include "motor_task.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -112,6 +113,7 @@ int main(void)
 	NRF24L01_Init();
 	NRF24L01_Check();
 	NRF24L01_RX_Mode();
+	motor_init();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */

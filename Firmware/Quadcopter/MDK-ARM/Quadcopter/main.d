@@ -52,3 +52,4 @@ quadcopter\main.o: ../Inc/usart.h
 quadcopter\main.o: ../Inc/gpio.h
 quadcopter\main.o: .\NRF10\nrf24.h
 quadcopter\main.o: .\NRF10\sys.h
+quadcopter\main.o: .\Application\motor_task.h
