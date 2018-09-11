@@ -155,30 +155,35 @@ int main(void)
 				thrus_speed += 1; 
 			}
 			tmp_buf[3] = '0';
+			tmp_buf[4] = 48 + thrus_speed;
 		}
 		else
 		{			
 			while(ADC_THRUS< 1)
 			{
 				ADC_THRUS += 0.2f;
-				thrus_speed -= 1; 
+				thrus_speed += 1; 
 			}
 			tmp_buf[3] = '1';
-		
+			tmp_buf[4] = 48 + thrus_speed;
 		}
-		tmp_buf[4] = 48 + thrus_speed;
+
 		tmp_buf[1] = 'm';
 		tmp_buf[2] = 'm';
-		
+		tmp_buf[0] = 'p';
 		if(HAL_GPIO_ReadPin(GPIOB, SW_L_U_Pin) == 0)
 		{
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
 			tmp_buf[1] = 'd';
+			tmp_buf[0] = 's';
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
 		}
 		if(HAL_GPIO_ReadPin(GPIOB, SW_L_D_Pin) == 0)
 		{
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
 			tmp_buf[1] = 'u';
+			tmp_buf[0] = 's';
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
 		}
 		if(HAL_GPIO_ReadPin(GPIOC, SW_R_U_Pin) == 0)
 		{
@@ -198,6 +203,7 @@ int main(void)
 		else 
 		{
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
 	//		printf("Send failed\n");
 		}
 		//HAL_Delay(100);

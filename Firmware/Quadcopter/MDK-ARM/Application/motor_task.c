@@ -5,6 +5,7 @@
 #include "nrf24.h"
 uint32_t motor_time_last;
 int motor_time_ms;
+int thrus_speed;
 void MotorTask(void const * argument)
 {
 	uint32_t motor_wake_time = osKernelSysTick();
@@ -12,34 +13,50 @@ void MotorTask(void const * argument)
   {
 		    motor_time_ms = HAL_GetTick() - motor_time_last;
     motor_time_last = HAL_GetTick();
-		if(buf_rx[1] == 'd')
+		if(buf_rx[0] == 's')
+		{
+			thrus_speed = buf_rx[4]-48;
+			thrus_speed = 1000 + 100*thrus_speed ;
+			TIM1 -> CCR1 = thrus_speed;
+			TIM1 -> CCR2 = thrus_speed;
+			TIM1 -> CCR3 = thrus_speed;
+			TIM1 -> CCR4 = thrus_speed;
+		}
+		else if(buf_rx[0] == 'p')
 		{
 			TIM1 -> CCR1 = 1000;
 			TIM1 -> CCR2 = 1000;
 			TIM1 -> CCR3 = 1000;
-			TIM1 -> CCR4 =1000;
+			TIM1 -> CCR4 = 1000;
 		}
-		else if(buf_rx[1] == 'm')
-		{
+//		if(buf_rx[1] == 'd')
+//		{
+//			TIM1 -> CCR1 = 1000;
+//			TIM1 -> CCR2 = 1000;
+//			TIM1 -> CCR3 = 1000;
+//			TIM1 -> CCR4 =1000;
+//		}
+//		else if(buf_rx[1] == 'm')
+//		{
 
-						TIM1 -> CCR1 = 1100;
-			TIM1 -> CCR2 = 1100;
-			TIM1 -> CCR3 = 1100;
-			TIM1 -> CCR4 = 1100;
-		}
-		else if(buf_rx[1] == 'u')
-		{			
-		TIM1 -> CCR1 = 1200;
-		TIM1 -> CCR2 = 1200;
-		TIM1 -> CCR3 = 1200;
-		TIM1 -> CCR4 = 1200;
-		}
+//			TIM1 -> CCR1 = 1100;
+//			TIM1 -> CCR2 = 1100;
+//			TIM1 -> CCR3 = 1100;
+//			TIM1 -> CCR4 = 1100;
+//		}
+//		else if(buf_rx[1] == 'u')
+//		{			
+//			TIM1 -> CCR1 = 1200;
+//			TIM1 -> CCR2 = 1200;
+//			TIM1 -> CCR3 = 1200;
+//			TIM1 -> CCR4 = 1200;
+//		}
 		else
 		{
-		TIM1 -> CCR1 = 0;
-		TIM1 -> CCR2 = 0;
-		TIM1 -> CCR3 = 0;
-		TIM1 -> CCR4 = 0;
+			TIM1 -> CCR1 = 0;
+			TIM1 -> CCR2 = 0;
+			TIM1 -> CCR3 = 0;
+			TIM1 -> CCR4 = 0;
 		}
 		
 		osDelayUntil(&motor_wake_time, 5);
