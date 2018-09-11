@@ -50,8 +50,10 @@
 __IO float ADC_ConvertedValueLocal[ADC_NUMOFCHANNEL];
 
 uint32_t ADC_ConvertedValue[ADC_NUMOFCHANNEL];
+float ADC_THRUS;
 uint8_t tmp_buf[33];	
-
+uint16_t i,j,k;
+int16_t thrus_speed;
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -123,17 +125,51 @@ int main(void)
   /* USER CODE BEGIN 3 */
 		tmp_buf[0] = 's';
 		/* 3.3为AD转换的参考电压值，stm32的AD转换为12bit，2^12=4096，
-				即当输入为3.3V时，AD转换结果为4096 */    
-    ADC_ConvertedValueLocal[0] =(float)(ADC_ConvertedValue[0]&0xFFF)*3.3/4096; // ADC_ConvertedValue[0]只取最低12有效数据
-		//yaw
-	  ADC_ConvertedValueLocal[1] =(float)(ADC_ConvertedValue[1]&0xFFF)*3.3/4096; // ADC_ConvertedValue[1]只取最低12有效数据
-		//thrus 
-    ADC_ConvertedValueLocal[2] =(float)(ADC_ConvertedValue[2]&0xFFF)*3.3/4096; // ADC_ConvertedValue[2]只取最低12有效数据
-		//roll
-    ADC_ConvertedValueLocal[3] =(float)(ADC_ConvertedValue[3]&0xFFF)*3.3/4096; // ADC_ConvertedValue[3]只取最低12有效数据
-		//pitch
+				即当输入为3.3V时，AD转换结果为4096 */ 
+		for(i=0;i<4;i++)
+			ADC_ConvertedValueLocal[i] = 0;
+		for(j=0;j<5;j++)
+		{
+			ADC_ConvertedValueLocal[0] +=(float)(ADC_ConvertedValue[0]&0xFFF)*3.3/4096; // ADC_ConvertedValue[0]只取最低12有效数据
+			//yaw
+			ADC_ConvertedValueLocal[1] +=(float)(ADC_ConvertedValue[1]&0xFFF)*3.3/4096; // ADC_ConvertedValue[1]只取最低12有效数据
+			//thrus 
+			ADC_ConvertedValueLocal[2] +=(float)(ADC_ConvertedValue[2]&0xFFF)*3.3/4096; // ADC_ConvertedValue[2]只取最低12有效数据
+			//roll
+			ADC_ConvertedValueLocal[3] +=(float)(ADC_ConvertedValue[3]&0xFFF)*3.3/4096; // ADC_ConvertedValue[3]只取最低12有效数据
+			//pitch
+		}
+//		for(k=0;k<4;k++)
+//		{
+//			ADC_ConvertedValueLocal[k] /= 5.00f;
+//		}
+		ADC_THRUS = ADC_ConvertedValueLocal[1] / 5.00f;
+		thrus_speed = 0;
+		if(ADC_THRUS> 1.5)
+		{
+			if(ADC_THRUS>3)
+				ADC_THRUS = 3.0f;
+			while(ADC_THRUS> 2)
+			{
+				ADC_THRUS -= 0.2f;
+				thrus_speed += 1; 
+			}
+			tmp_buf[3] = '0';
+		}
+		else
+		{			
+			while(ADC_THRUS< 1)
+			{
+				ADC_THRUS += 0.2f;
+				thrus_speed -= 1; 
+			}
+			tmp_buf[3] = '1';
+		
+		}
+		tmp_buf[4] = 48 + thrus_speed;
 		tmp_buf[1] = 'm';
 		tmp_buf[2] = 'm';
+		
 		if(HAL_GPIO_ReadPin(GPIOB, SW_L_U_Pin) == 0)
 		{
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
