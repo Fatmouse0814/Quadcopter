@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=3.3V Pin=C5-1
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=3.3V Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=GND Pin=C13-1
+Removed Pin From Net: NetName=3.3V Pin=C13-2
+Removed Member From Class: ClassName=remoter Member=C5
+Removed Member From Class: ClassName=remoter Member=C6
+Removed Member From Class: ClassName=remoter Member=C13
+Change Component Designator: OldDesignator=RSET NewDesignator=KEY0
+Added Member To Class: ClassName=remoter Member=Component S_L SW-SPDT
+Added Room: Name=remoter

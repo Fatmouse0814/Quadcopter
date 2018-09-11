@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=J1-J1
+Removed Pin From Net: NetName=GND Pin=J1-J1
+Removed Pin From Net: NetName=GND Pin=J2-J1
+Removed Pin From Net: NetName=GND Pin=J2-J1
+Added Room: Name=remoter

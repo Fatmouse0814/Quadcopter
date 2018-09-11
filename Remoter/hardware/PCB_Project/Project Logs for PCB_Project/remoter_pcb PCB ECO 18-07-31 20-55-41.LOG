@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=ADC_THRUS Pin=J1-2
+Added Pin To Net: NetName=ADC_YAW Pin=J1-5
+Added Member To Class: ClassName=remoter Member=Component C7 Cap
+Added Member To Class: ClassName=remoter Member=Component J1 ”Õ√≈“°∏À
+Added Room: Name=remoter
