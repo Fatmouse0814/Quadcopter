@@ -29,28 +29,6 @@ void MotorTask(void const * argument)
 			TIM1 -> CCR3 = 1000;
 			TIM1 -> CCR4 = 1000;
 		}
-//		if(buf_rx[1] == 'd')
-//		{
-//			TIM1 -> CCR1 = 1000;
-//			TIM1 -> CCR2 = 1000;
-//			TIM1 -> CCR3 = 1000;
-//			TIM1 -> CCR4 =1000;
-//		}
-//		else if(buf_rx[1] == 'm')
-//		{
-
-//			TIM1 -> CCR1 = 1100;
-//			TIM1 -> CCR2 = 1100;
-//			TIM1 -> CCR3 = 1100;
-//			TIM1 -> CCR4 = 1100;
-//		}
-//		else if(buf_rx[1] == 'u')
-//		{			
-//			TIM1 -> CCR1 = 1200;
-//			TIM1 -> CCR2 = 1200;
-//			TIM1 -> CCR3 = 1200;
-//			TIM1 -> CCR4 = 1200;
-//		}
 		else
 		{
 			TIM1 -> CCR1 = 0;

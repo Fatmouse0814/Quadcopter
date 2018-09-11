@@ -58,6 +58,7 @@
 /* USER CODE BEGIN Includes */
 #include "nrf24.h"
 #include "motor_task.h"
+#include "imu_task.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -110,6 +111,8 @@ int main(void)
   MX_TIM1_Init();
 
   /* USER CODE BEGIN 2 */
+	HAL_Delay(999);
+	imu_param_init();
 	NRF24L01_Init();
 	NRF24L01_Check();
 	NRF24L01_RX_Mode();

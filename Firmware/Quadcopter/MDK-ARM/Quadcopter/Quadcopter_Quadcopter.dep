@@ -1,11 +1,11 @@
 Dependencies for Project 'Quadcopter', Target 'Quadcopter': (DO NOT MODIFY !)
-F (startup_stm32f407xx.s)(0x5B960C57)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\Inc-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o quadcopter\startup_stm32f407xx.o --depend quadcopter\startup_stm32f407xx.d)
-F (.\NRF10\nrf24.c)(0x5B95F7A7)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\nrf24.o --omf_browse quadcopter\nrf24.crf --depend quadcopter\nrf24.d)
+F (startup_stm32f407xx.s)(0x5B97C968)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\Inc-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 523" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o quadcopter\startup_stm32f407xx.o --depend quadcopter\startup_stm32f407xx.d)
+F (.\NRF10\nrf24.c)(0x5B95F7A7)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\nrf24.o --omf_browse quadcopter\nrf24.crf --depend quadcopter\nrf24.d)
 I (NRF10\nrf24.h)(0x5B9600DC)
 I (NRF10\sys.h)(0x5A9E7E0E)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -34,11 +34,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-I (../Inc/spi.h)(0x5B960C53)
+I (../Inc/spi.h)(0x5B97C963)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -50,10 +50,10 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5A5DC8CE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal.o --omf_browse quadcopter\stm32f4xx_hal.crf --depend quadcopter\stm32f4xx_hal.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal.o --omf_browse quadcopter\stm32f4xx_hal.crf --depend quadcopter\stm32f4xx_hal.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -82,10 +82,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_pwr_ex.o --omf_browse quadcopter\stm32f4xx_hal_pwr_ex.crf --depend quadcopter\stm32f4xx_hal_pwr_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_pwr_ex.o --omf_browse quadcopter\stm32f4xx_hal_pwr_ex.crf --depend quadcopter\stm32f4xx_hal_pwr_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -114,10 +114,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_cortex.o --omf_browse quadcopter\stm32f4xx_hal_cortex.crf --depend quadcopter\stm32f4xx_hal_cortex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_cortex.o --omf_browse quadcopter\stm32f4xx_hal_cortex.crf --depend quadcopter\stm32f4xx_hal_cortex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -146,10 +146,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_uart.o --omf_browse quadcopter\stm32f4xx_hal_uart.crf --depend quadcopter\stm32f4xx_hal_uart.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_uart.o --omf_browse quadcopter\stm32f4xx_hal_uart.crf --depend quadcopter\stm32f4xx_hal_uart.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -178,10 +178,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_pwr.o --omf_browse quadcopter\stm32f4xx_hal_pwr.crf --depend quadcopter\stm32f4xx_hal_pwr.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_pwr.o --omf_browse quadcopter\stm32f4xx_hal_pwr.crf --depend quadcopter\stm32f4xx_hal_pwr.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -210,10 +210,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_rcc_ex.o --omf_browse quadcopter\stm32f4xx_hal_rcc_ex.crf --depend quadcopter\stm32f4xx_hal_rcc_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_rcc_ex.o --omf_browse quadcopter\stm32f4xx_hal_rcc_ex.crf --depend quadcopter\stm32f4xx_hal_rcc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -242,10 +242,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_tim_ex.o --omf_browse quadcopter\stm32f4xx_hal_tim_ex.crf --depend quadcopter\stm32f4xx_hal_tim_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_tim_ex.o --omf_browse quadcopter\stm32f4xx_hal_tim_ex.crf --depend quadcopter\stm32f4xx_hal_tim_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -274,10 +274,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_dma_ex.o --omf_browse quadcopter\stm32f4xx_hal_dma_ex.crf --depend quadcopter\stm32f4xx_hal_dma_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_dma_ex.o --omf_browse quadcopter\stm32f4xx_hal_dma_ex.crf --depend quadcopter\stm32f4xx_hal_dma_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -306,10 +306,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_spi.o --omf_browse quadcopter\stm32f4xx_hal_spi.crf --depend quadcopter\stm32f4xx_hal_spi.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_spi.o --omf_browse quadcopter\stm32f4xx_hal_spi.crf --depend quadcopter\stm32f4xx_hal_spi.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -338,10 +338,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_flash_ramfunc.o --omf_browse quadcopter\stm32f4xx_hal_flash_ramfunc.crf --depend quadcopter\stm32f4xx_hal_flash_ramfunc.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_flash_ramfunc.o --omf_browse quadcopter\stm32f4xx_hal_flash_ramfunc.crf --depend quadcopter\stm32f4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -370,10 +370,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_flash_ex.o --omf_browse quadcopter\stm32f4xx_hal_flash_ex.crf --depend quadcopter\stm32f4xx_hal_flash_ex.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_flash_ex.o --omf_browse quadcopter\stm32f4xx_hal_flash_ex.crf --depend quadcopter\stm32f4xx_hal_flash_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -402,10 +402,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_rcc.o --omf_browse quadcopter\stm32f4xx_hal_rcc.crf --depend quadcopter\stm32f4xx_hal_rcc.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_rcc.o --omf_browse quadcopter\stm32f4xx_hal_rcc.crf --depend quadcopter\stm32f4xx_hal_rcc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -434,10 +434,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_tim.o --omf_browse quadcopter\stm32f4xx_hal_tim.crf --depend quadcopter\stm32f4xx_hal_tim.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_tim.o --omf_browse quadcopter\stm32f4xx_hal_tim.crf --depend quadcopter\stm32f4xx_hal_tim.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -466,10 +466,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_flash.o --omf_browse quadcopter\stm32f4xx_hal_flash.crf --depend quadcopter\stm32f4xx_hal_flash.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_flash.o --omf_browse quadcopter\stm32f4xx_hal_flash.crf --depend quadcopter\stm32f4xx_hal_flash.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -498,10 +498,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_dma.o --omf_browse quadcopter\stm32f4xx_hal_dma.crf --depend quadcopter\stm32f4xx_hal_dma.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_dma.o --omf_browse quadcopter\stm32f4xx_hal_dma.crf --depend quadcopter\stm32f4xx_hal_dma.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -530,10 +530,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_gpio.o --omf_browse quadcopter\stm32f4xx_hal_gpio.crf --depend quadcopter\stm32f4xx_hal_gpio.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x5A5DC8C6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_gpio.o --omf_browse quadcopter\stm32f4xx_hal_gpio.crf --depend quadcopter\stm32f4xx_hal_gpio.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -562,7 +562,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Src/system_stm32f4xx.c)(0x5A5DC8A0)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\system_stm32f4xx.o --omf_browse quadcopter\system_stm32f4xx.crf --depend quadcopter\system_stm32f4xx.d)
+F (../Src/system_stm32f4xx.c)(0x5A5DC8A0)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\system_stm32f4xx.o --omf_browse quadcopter\system_stm32f4xx.crf --depend quadcopter\system_stm32f4xx.d)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5A5DC89F)
 I (../Drivers/CMSIS/Include/core_cm4.h)(0x5A5DC8C4)
@@ -573,8 +573,8 @@ I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A5DC8C4)
 I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A5DC8C4)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A5DC8A0)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A5DC8C5)
@@ -594,14 +594,14 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Middlewares/Third_Party/FreeRTOS/Source/tasks.c)(0x5A5DC8CF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\tasks.o --omf_browse quadcopter\tasks.crf --depend quadcopter\tasks.d)
+F (../Middlewares/Third_Party/FreeRTOS/Source/tasks.c)(0x5A5DC8CF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\tasks.o --omf_browse quadcopter\tasks.crf --depend quadcopter\tasks.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -611,13 +611,13 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h)(0x5A5DC8CE)
-F (../Middlewares/Third_Party/FreeRTOS/Source/timers.c)(0x5A5DC8CF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\timers.o --omf_browse quadcopter\timers.crf --depend quadcopter\timers.d)
+F (../Middlewares/Third_Party/FreeRTOS/Source/timers.c)(0x5A5DC8CF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\timers.o --omf_browse quadcopter\timers.crf --depend quadcopter\timers.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -627,27 +627,27 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5A5DC8CE)
-F (../Middlewares/Third_Party/FreeRTOS/Source/list.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\list.o --omf_browse quadcopter\list.crf --depend quadcopter\list.d)
+F (../Middlewares/Third_Party/FreeRTOS/Source/list.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\list.o --omf_browse quadcopter\list.crf --depend quadcopter\list.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5A5DC8CF)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
-F (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\cmsis_os.o --omf_browse quadcopter\cmsis_os.crf --depend quadcopter\cmsis_os.d)
+F (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\cmsis_os.o --omf_browse quadcopter\cmsis_os.crf --depend quadcopter\cmsis_os.d)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -660,13 +660,13 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5A5DC8CE)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A5DC8C4)
-F (../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\event_groups.o --omf_browse quadcopter\event_groups.crf --depend quadcopter\event_groups.d)
+F (../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\event_groups.o --omf_browse quadcopter\event_groups.crf --depend quadcopter\event_groups.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -676,14 +676,14 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5A5DC8CE)
-F (../Middlewares/Third_Party/FreeRTOS/Source/queue.c)(0x5A5DC8CF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\queue.o --omf_browse quadcopter\queue.crf --depend quadcopter\queue.d)
+F (../Middlewares/Third_Party/FreeRTOS/Source/queue.c)(0x5A5DC8CF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\queue.o --omf_browse quadcopter\queue.crf --depend quadcopter\queue.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -692,13 +692,13 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5A5DC8CE
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5A5DC8CE)
-F (../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\heap_4.o --omf_browse quadcopter\heap_4.crf --depend quadcopter\heap_4.d)
+F (../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\heap_4.o --omf_browse quadcopter\heap_4.crf --depend quadcopter\heap_4.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -706,12 +706,12 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
-F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c)(0x5A5DC8CF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\port.o --omf_browse quadcopter\port.crf --depend quadcopter\port.d)
+F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c)(0x5A5DC8CF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\port.o --omf_browse quadcopter\port.crf --depend quadcopter\port.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -719,12 +719,12 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
-F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\croutine.o --omf_browse quadcopter\croutine.crf --depend quadcopter\croutine.d)
+F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x5A5DC8CE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\croutine.o --omf_browse quadcopter\croutine.crf --depend quadcopter\croutine.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -733,11 +733,11 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5A5DC8CE
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h)(0x5A5DC8CE)
-F (../Src/gpio.c)(0x5B960C51)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\gpio.o --omf_browse quadcopter\gpio.crf --depend quadcopter\gpio.d)
-I (../Inc/gpio.h)(0x5B960C51)
+F (../Src/gpio.c)(0x5B97C961)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\gpio.o --omf_browse quadcopter\gpio.crf --depend quadcopter\gpio.d)
+I (../Inc/gpio.h)(0x5B97C961)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -766,10 +766,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Src/stm32f4xx_it.c)(0x5B960C54)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_it.o --omf_browse quadcopter\stm32f4xx_it.crf --depend quadcopter\stm32f4xx_it.d)
+F (../Src/stm32f4xx_it.c)(0x5B97C964)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_it.o --omf_browse quadcopter\stm32f4xx_it.crf --depend quadcopter\stm32f4xx_it.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -798,11 +798,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-I (../Inc/stm32f4xx_it.h)(0x5B960C54)
+I (../Inc/stm32f4xx_it.h)(0x5B97C964)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -814,11 +814,11 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5A5DC8CE)
-F (../Src/spi.c)(0x5B960C53)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\spi.o --omf_browse quadcopter\spi.crf --depend quadcopter\spi.d)
-I (../Inc/spi.h)(0x5B960C53)
+F (../Src/spi.c)(0x5B97C963)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\spi.o --omf_browse quadcopter\spi.crf --depend quadcopter\spi.d)
+I (../Inc/spi.h)(0x5B97C963)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -847,12 +847,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-I (../Inc/gpio.h)(0x5B960C51)
-F (../Src/usart.c)(0x5B960C53)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\usart.o --omf_browse quadcopter\usart.crf --depend quadcopter\usart.d)
-I (../Inc/usart.h)(0x5B960C54)
+I (../Inc/gpio.h)(0x5B97C961)
+F (../Src/usart.c)(0x5B97C964)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\usart.o --omf_browse quadcopter\usart.crf --depend quadcopter\usart.d)
+I (../Inc/usart.h)(0x5B97C964)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -881,11 +881,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-I (../Inc/gpio.h)(0x5B960C51)
-F (../Src/stm32f4xx_hal_msp.c)(0x5B960C54)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_msp.o --omf_browse quadcopter\stm32f4xx_hal_msp.crf --depend quadcopter\stm32f4xx_hal_msp.d)
+I (../Inc/gpio.h)(0x5B97C961)
+F (../Src/stm32f4xx_hal_msp.c)(0x5B97C964)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_msp.o --omf_browse quadcopter\stm32f4xx_hal_msp.crf --depend quadcopter\stm32f4xx_hal_msp.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -914,11 +914,11 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Src/tim.c)(0x5B960C53)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\tim.o --omf_browse quadcopter\tim.crf --depend quadcopter\tim.d)
-I (../Inc/tim.h)(0x5B960C53)
+F (../Src/tim.c)(0x5B97C964)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\tim.o --omf_browse quadcopter\tim.crf --depend quadcopter\tim.d)
+I (../Inc/tim.h)(0x5B97C964)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -947,10 +947,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Src/stm32f4xx_hal_timebase_TIM.c)(0x5B960C54)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_timebase_tim.o --omf_browse quadcopter\stm32f4xx_hal_timebase_tim.crf --depend quadcopter\stm32f4xx_hal_timebase_tim.d)
+F (../Src/stm32f4xx_hal_timebase_TIM.c)(0x5B97C965)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\stm32f4xx_hal_timebase_tim.o --omf_browse quadcopter\stm32f4xx_hal_timebase_tim.crf --depend quadcopter\stm32f4xx_hal_timebase_tim.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -979,10 +979,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
-F (../Src/main.c)(0x5B960C55)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\main.o --omf_browse quadcopter\main.crf --depend quadcopter\main.d)
-I (../Inc/main.h)(0x5B960C55)
+F (../Src/main.c)(0x5B97DBD2)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\main.o --omf_browse quadcopter\main.crf --depend quadcopter\main.d)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -1014,7 +1014,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -1026,19 +1026,20 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5A5DC8CE)
-I (../Inc/spi.h)(0x5B960C53)
-I (../Inc/tim.h)(0x5B960C53)
-I (../Inc/usart.h)(0x5B960C54)
-I (../Inc/gpio.h)(0x5B960C51)
+I (../Inc/spi.h)(0x5B97C963)
+I (../Inc/tim.h)(0x5B97C964)
+I (../Inc/usart.h)(0x5B97C964)
+I (../Inc/gpio.h)(0x5B97C961)
 I (.\NRF10\nrf24.h)(0x5B9600DC)
 I (.\NRF10\sys.h)(0x5A9E7E0E)
 I (.\Application\motor_task.h)(0x5B9602EF)
-F (../Src/freertos.c)(0x5B960C53)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\freertos.o --omf_browse quadcopter\freertos.crf --depend quadcopter\freertos.d)
+I (.\Application\imu_task.h)(0x5B7BB7F2)
+F (../Src/freertos.c)(0x5B97DC64)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\freertos.o --omf_browse quadcopter\freertos.crf --depend quadcopter\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -1054,7 +1055,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5A5DC8CE
 I (.\NRF10\nrf24.h)(0x5B9600DC)
 I (.\NRF10\sys.h)(0x5A9E7E0E)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -1083,11 +1084,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
 I (.\Application\motor_task.h)(0x5B9602EF)
-F (.\Application\motor_task.c)(0x5B97BAD6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx --C99-o quadcopter\motor_task.o --omf_browse quadcopter\motor_task.crf --depend quadcopter\motor_task.d)
+I (.\Application\imu_task.h)(0x5B7BB7F2)
+F (.\Application\motor_task.c)(0x5B97C999)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\motor_task.o --omf_browse quadcopter\motor_task.crf --depend quadcopter\motor_task.d)
 I (Application\motor_task.h)(0x5B9602EF)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5B960C54)
-I (../Inc/main.h)(0x5B960C55)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
@@ -1119,7 +1121,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
-I (../Inc/FreeRTOSConfig.h)(0x5B960C53)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
@@ -1131,6 +1133,611 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5A5DC8CE)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5A5DC8CE)
-I (../Inc/tim.h)(0x5B960C53)
+I (../Inc/tim.h)(0x5B97C964)
 I (.\NRF10\nrf24.h)(0x5B9600DC)
 I (.\NRF10\sys.h)(0x5A9E7E0E)
+F (.\Application\imu_task.c)(0x5B97CCB0)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\imu_task.o --omf_browse quadcopter\imu_task.crf --depend quadcopter\imu_task.d)
+I (Application\imu_task.h)(0x5B7BB7F2)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5A5DC8CF)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5A5DC8CE)
+I (.\imu\mpu9250.h)(0x5AE60C84)
+I (.\fatmouselib\delay.h)(0x5ADF2D76)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5A5DC89F)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A5DC8C5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
+I (../Inc/usart.h)(0x5B97C964)
+I (.\mpl\driver\eMPL\inv_mpu.h)(0x5A73D8BC)
+I (.\mpl\mllite\mpl.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\mllite\invensense.h)(0x5A73D8BC)
+I (.\mpl\mllite\data_builder.h)(0x5A73D8BC)
+I (.\mpl\mllite\hal_outputs.h)(0x5A73D8BC)
+I (.\mpl\mllite\message_layer.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (.\mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\mllite\results_holder.h)(0x5A73D8BC)
+I (.\mpl\mllite\start_manager.h)(0x5A73D8BC)
+I (.\mpl\mllite\storage_manager.h)(0x5A73D8BC)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (.\mpl\driver\include\mlinclude.h)(0x5A73D8BC)
+I (.\mpl\mpl\invensense_adv.h)(0x5A73D8BC)
+I (.\mpl\mpl\accel_auto_cal.h)(0x5A73D8BC)
+I (.\mpl\mpl\compass_vec_cal.h)(0x5A73D8BC)
+I (.\mpl\mpl\fast_no_motion.h)(0x5A73D8BC)
+I (.\mpl\mpl\fusion_9axis.h)(0x5A73D8BC)
+I (.\mpl\mpl\gyro_tc.h)(0x5A73D8BC)
+I (.\mpl\mpl\heading_from_gyro.h)(0x5A73D8BC)
+I (.\mpl\mpl\mag_disturb.h)(0x5A73D8BC)
+I (.\mpl\mpl\motion_no_motion.h)(0x5A73D8BC)
+I (.\mpl\mpl\no_gyro_fusion.h)(0x5A73D8BC)
+I (.\mpl\mpl\quaternion_supervisor.h)(0x5A73D8BC)
+I (.\mpl\eMPL-hal\eMPL_outputs.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mpu.h)(0x5A73D8BC)
+I (.\mpl\driver\stm32L\packet.h)(0x5A73D8BC)
+I (.\mpl\driver\eMPL\inv_mpu_dmp_motion_driver.h)(0x5A73D8BC)
+I (.\imu\bsp_i2c.h)(0x5B7B9788)
+I (.\imu\sys.h)(0x5ADF2C64)
+F (.\imu\bsp_i2c.c)(0x5AE19726)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\bsp_i2c.o --omf_browse quadcopter\bsp_i2c.crf --depend quadcopter\bsp_i2c.d)
+I (imu\bsp_i2c.h)(0x5B7B9788)
+I (imu\sys.h)(0x5ADF2C64)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5A5DC89F)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5A5DC8C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A5DC8C5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
+I (.\fatmouselib\delay.h)(0x5ADF2D76)
+F (.\imu\mpu9250.c)(0x5AE60CE2)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\mpu9250.o --omf_browse quadcopter\mpu9250.crf --depend quadcopter\mpu9250.d)
+I (imu\mpu9250.h)(0x5AE60C84)
+I (.\fatmouselib\delay.h)(0x5ADF2D76)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5A5DC89F)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5A5DC8C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A5DC8C5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
+I (../Inc/usart.h)(0x5B97C964)
+I (.\mpl\driver\eMPL\inv_mpu.h)(0x5A73D8BC)
+I (.\mpl\mllite\mpl.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\mllite\invensense.h)(0x5A73D8BC)
+I (.\mpl\mllite\data_builder.h)(0x5A73D8BC)
+I (.\mpl\mllite\hal_outputs.h)(0x5A73D8BC)
+I (.\mpl\mllite\message_layer.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (.\mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\mllite\results_holder.h)(0x5A73D8BC)
+I (.\mpl\mllite\start_manager.h)(0x5A73D8BC)
+I (.\mpl\mllite\storage_manager.h)(0x5A73D8BC)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (.\mpl\driver\include\mlinclude.h)(0x5A73D8BC)
+I (.\mpl\mpl\invensense_adv.h)(0x5A73D8BC)
+I (.\mpl\mpl\accel_auto_cal.h)(0x5A73D8BC)
+I (.\mpl\mpl\compass_vec_cal.h)(0x5A73D8BC)
+I (.\mpl\mpl\fast_no_motion.h)(0x5A73D8BC)
+I (.\mpl\mpl\fusion_9axis.h)(0x5A73D8BC)
+I (.\mpl\mpl\gyro_tc.h)(0x5A73D8BC)
+I (.\mpl\mpl\heading_from_gyro.h)(0x5A73D8BC)
+I (.\mpl\mpl\mag_disturb.h)(0x5A73D8BC)
+I (.\mpl\mpl\motion_no_motion.h)(0x5A73D8BC)
+I (.\mpl\mpl\no_gyro_fusion.h)(0x5A73D8BC)
+I (.\mpl\mpl\quaternion_supervisor.h)(0x5A73D8BC)
+I (.\mpl\eMPL-hal\eMPL_outputs.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mpu.h)(0x5A73D8BC)
+I (.\mpl\driver\stm32L\packet.h)(0x5A73D8BC)
+I (.\mpl\driver\eMPL\inv_mpu_dmp_motion_driver.h)(0x5A73D8BC)
+I (imu\bsp_i2c.h)(0x5B7B9788)
+I (imu\sys.h)(0x5ADF2C64)
+F (.\mpl\driver\eMPL\inv_mpu.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\inv_mpu.o --omf_browse quadcopter\inv_mpu.crf --depend quadcopter\inv_mpu.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (.\fatmouselib\delay.h)(0x5ADF2D76)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5A5DC89F)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
+I (../Inc/usart.h)(0x5B97C964)
+I (mpl\driver\eMPL\inv_mpu.h)(0x5A73D8BC)
+I (.\mpl\mllite\mpl.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\mllite\invensense.h)(0x5A73D8BC)
+I (.\mpl\mllite\data_builder.h)(0x5A73D8BC)
+I (.\mpl\mllite\hal_outputs.h)(0x5A73D8BC)
+I (.\mpl\mllite\message_layer.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (.\mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\mllite\results_holder.h)(0x5A73D8BC)
+I (.\mpl\mllite\start_manager.h)(0x5A73D8BC)
+I (.\mpl\mllite\storage_manager.h)(0x5A73D8BC)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (.\mpl\driver\include\mlinclude.h)(0x5A73D8BC)
+I (.\mpl\mpl\invensense_adv.h)(0x5A73D8BC)
+I (.\mpl\mpl\accel_auto_cal.h)(0x5A73D8BC)
+I (.\mpl\mpl\compass_vec_cal.h)(0x5A73D8BC)
+I (.\mpl\mpl\fast_no_motion.h)(0x5A73D8BC)
+I (.\mpl\mpl\fusion_9axis.h)(0x5A73D8BC)
+I (.\mpl\mpl\gyro_tc.h)(0x5A73D8BC)
+I (.\mpl\mpl\heading_from_gyro.h)(0x5A73D8BC)
+I (.\mpl\mpl\mag_disturb.h)(0x5A73D8BC)
+I (.\mpl\mpl\motion_no_motion.h)(0x5A73D8BC)
+I (.\mpl\mpl\no_gyro_fusion.h)(0x5A73D8BC)
+I (.\mpl\mpl\quaternion_supervisor.h)(0x5A73D8BC)
+I (.\mpl\eMPL-hal\eMPL_outputs.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mpu.h)(0x5A73D8BC)
+I (.\mpl\driver\stm32L\packet.h)(0x5A73D8BC)
+I (mpl\driver\eMPL\inv_mpu_dmp_motion_driver.h)(0x5A73D8BC)
+I (.\imu\mpu9250.h)(0x5AE60C84)
+I (.\imu\bsp_i2c.h)(0x5B7B9788)
+I (.\imu\sys.h)(0x5ADF2C64)
+F (.\mpl\driver\eMPL\inv_mpu_dmp_motion_driver.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\inv_mpu_dmp_motion_driver.o --omf_browse quadcopter\inv_mpu_dmp_motion_driver.crf --depend quadcopter\inv_mpu_dmp_motion_driver.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (mpl\driver\eMPL\inv_mpu.h)(0x5A73D8BC)
+I (mpl\driver\eMPL\inv_mpu_dmp_motion_driver.h)(0x5A73D8BC)
+I (mpl\driver\eMPL\dmpKey.h)(0x5A73D8BC)
+I (mpl\driver\eMPL\dmpmap.h)(0x5A73D8BC)
+I (.\imu\mpu9250.h)(0x5AE60C84)
+I (.\fatmouselib\delay.h)(0x5ADF2D76)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5A5DC89F)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
+I (../Inc/usart.h)(0x5B97C964)
+I (.\mpl\mllite\mpl.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\mllite\invensense.h)(0x5A73D8BC)
+I (.\mpl\mllite\data_builder.h)(0x5A73D8BC)
+I (.\mpl\mllite\hal_outputs.h)(0x5A73D8BC)
+I (.\mpl\mllite\message_layer.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (.\mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\mllite\results_holder.h)(0x5A73D8BC)
+I (.\mpl\mllite\start_manager.h)(0x5A73D8BC)
+I (.\mpl\mllite\storage_manager.h)(0x5A73D8BC)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (.\mpl\driver\include\mlinclude.h)(0x5A73D8BC)
+I (.\mpl\mpl\invensense_adv.h)(0x5A73D8BC)
+I (.\mpl\mpl\accel_auto_cal.h)(0x5A73D8BC)
+I (.\mpl\mpl\compass_vec_cal.h)(0x5A73D8BC)
+I (.\mpl\mpl\fast_no_motion.h)(0x5A73D8BC)
+I (.\mpl\mpl\fusion_9axis.h)(0x5A73D8BC)
+I (.\mpl\mpl\gyro_tc.h)(0x5A73D8BC)
+I (.\mpl\mpl\heading_from_gyro.h)(0x5A73D8BC)
+I (.\mpl\mpl\mag_disturb.h)(0x5A73D8BC)
+I (.\mpl\mpl\motion_no_motion.h)(0x5A73D8BC)
+I (.\mpl\mpl\no_gyro_fusion.h)(0x5A73D8BC)
+I (.\mpl\mpl\quaternion_supervisor.h)(0x5A73D8BC)
+I (.\mpl\eMPL-hal\eMPL_outputs.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mpu.h)(0x5A73D8BC)
+I (.\mpl\driver\stm32L\packet.h)(0x5A73D8BC)
+I (.\imu\bsp_i2c.h)(0x5B7B9788)
+I (.\imu\sys.h)(0x5ADF2C64)
+F (.\mpl\driver\stm32L\log_stm32.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\log_stm32.o --omf_browse quadcopter\log_stm32.crf --depend quadcopter\log_stm32.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (mpl\driver\stm32L\packet.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5A5DC89F)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
+I (../Inc/usart.h)(0x5B97C964)
+F (.\mpl\eMPL-hal\eMPL_outputs.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\empl_outputs.o --omf_browse quadcopter\empl_outputs.crf --depend quadcopter\empl_outputs.d)
+I (mpl\eMPL-hal\eMPL_outputs.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (.\mpl\mllite\start_manager.h)(0x5A73D8BC)
+I (.\mpl\mllite\data_builder.h)(0x5A73D8BC)
+I (.\mpl\mllite\results_holder.h)(0x5A73D8BC)
+F (.\mpl\mllite\data_builder.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\data_builder.o --omf_browse quadcopter\data_builder.crf --depend quadcopter\data_builder.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (mpl\mllite\data_builder.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (mpl\mllite\storage_manager.h)(0x5A73D8BC)
+I (mpl\mllite\message_layer.h)(0x5A73D8BC)
+I (mpl\mllite\results_holder.h)(0x5A73D8BC)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+F (.\mpl\mllite\hal_outputs.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\hal_outputs.o --omf_browse quadcopter\hal_outputs.crf --depend quadcopter\hal_outputs.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (mpl\mllite\hal_outputs.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (mpl\mllite\start_manager.h)(0x5A73D8BC)
+I (mpl\mllite\data_builder.h)(0x5A73D8BC)
+I (mpl\mllite\results_holder.h)(0x5A73D8BC)
+F (.\mpl\mllite\message_layer.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\message_layer.o --omf_browse quadcopter\message_layer.crf --depend quadcopter\message_layer.d)
+I (mpl\mllite\message_layer.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+F (.\mpl\mllite\ml_math_func.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\ml_math_func.o --omf_browse quadcopter\ml_math_func.crf --depend quadcopter\ml_math_func.d)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\driver\include\mlinclude.h)(0x5A73D8BC)
+F (.\mpl\mllite\mlmath.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\mlmath.o --omf_browse quadcopter\mlmath.crf --depend quadcopter\mlmath.d)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+F (.\mpl\mllite\mpl.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\mpl.o --omf_browse quadcopter\mpl.crf --depend quadcopter\mpl.d)
+I (mpl\mllite\storage_manager.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (mpl\mllite\mpl.h)(0x5A73D8BC)
+I (mpl\mllite\start_manager.h)(0x5A73D8BC)
+I (mpl\mllite\data_builder.h)(0x5A73D8BC)
+I (mpl\mllite\results_holder.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlinclude.h)(0x5A73D8BC)
+F (.\mpl\mllite\results_holder.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\results_holder.o --omf_browse quadcopter\results_holder.crf --depend quadcopter\results_holder.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (mpl\mllite\results_holder.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (mpl\mllite\start_manager.h)(0x5A73D8BC)
+I (mpl\mllite\data_builder.h)(0x5A73D8BC)
+I (mpl\mllite\message_layer.h)(0x5A73D8BC)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+F (.\mpl\mllite\start_manager.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\start_manager.o --omf_browse quadcopter\start_manager.crf --depend quadcopter\start_manager.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (mpl\mllite\start_manager.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+F (.\mpl\mllite\storage_manager.c)(0x5A73D8BC)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\storage_manager.o --omf_browse quadcopter\storage_manager.crf --depend quadcopter\storage_manager.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (mpl\mllite\storage_manager.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mltypes.h)(0x5A73D8BC)
+I (.\mpl\driver\include\stdint_invensense.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\errno.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x57F606B6)
+I (.\mpl\driver\include\log.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
+I (mpl\mllite\ml_math_func.h)(0x5A73D8BC)
+I (.\mpl\driver\include\mlmath.h)(0x5A73D8BC)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+F (.\mpl\mpl\libmpllib.lib)(0x5A6AF0DC)()
+F (.\fatmouselib\definedmath.c)(0x5AE4C6D6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\definedmath.o --omf_browse quadcopter\definedmath.crf --depend quadcopter\definedmath.d)
+I (fatmouselib\definedmath.h)(0x5AE4C3DA)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5A5DC8CE)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F606B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (../Inc/FreeRTOSConfig.h)(0x5B97C963)
+I (../Inc/main.h)(0x5B97C965)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5A5DC8CF)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5A5DC8CE)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5A5DC8CE)
+F (.\fatmouselib\delay.c)(0x5AE0BFC2)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\delay.o --omf_browse quadcopter\delay.crf --depend quadcopter\delay.d)
+I (fatmouselib\delay.h)(0x5ADF2D76)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5A5DC89F)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5A5DC8C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A5DC8C5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
+F (.\fatmouselib\pid.c)(0x5B848186)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Drivers/CMSIS/Include -I .\NRF10 -I .\Application -I .\imu -I .\mpl\driver\eMPL -I .\mpl\driver\include -I .\mpl\driver\stm32L -I .\mpl\eMPL-hal -I .\mpl\mllite -I .\mpl\mpl -I .\mpl -I .\fatmouselib --C99-I.\RTE\_Quadcopter-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="523" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xxMPL_LOG_NDEBUG="1" -DEMPL -DMPU9250 -DEMPL_TARGET_STM32F4 -DSTM32F407xx --C99-o quadcopter\pid.o --omf_browse quadcopter\pid.crf --depend quadcopter\pid.d)
+I (fatmouselib\pid.h)(0x5B860E46)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5A5DC8C5)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5B97C965)
+I (../Inc/main.h)(0x5B97C965)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5A5DC8C5)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5A5DC89F)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5A5DC8C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Include/core_cmSimd.h)(0x5A5DC8C4)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5A5DC8A0)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5A5DC8C5)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F606B8)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5A5DC8C5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5A5DC8C6)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5A5DC8C6)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x57F606B6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F606B8)

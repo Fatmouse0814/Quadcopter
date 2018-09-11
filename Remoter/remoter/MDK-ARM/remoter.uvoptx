@@ -181,6 +181,26 @@
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
+          <ItemText>tmp_buf[0]</ItemText>
+        </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>tmp_buf[1]</ItemText>
+        </Ww>
+        <Ww>
+          <count>8</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>tmp_buf[2]</ItemText>
+        </Ww>
+        <Ww>
+          <count>9</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>tmp_buf[3]</ItemText>
+        </Ww>
+        <Ww>
+          <count>10</count>
+          <WinNumber>1</WinNumber>
           <ItemText>tmp_buf[4]</ItemText>
         </Ww>
       </WatchWindow1>

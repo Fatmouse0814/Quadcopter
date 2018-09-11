@@ -57,6 +57,18 @@
 
 /* Private define ------------------------------------------------------------*/
 
+#define NRF_SCK_Pin GPIO_PIN_5
+#define NRF_SCK_GPIO_Port GPIOA
+#define NRF_MISO_Pin GPIO_PIN_6
+#define NRF_MISO_GPIO_Port GPIOA
+#define NRF_MOSI_Pin GPIO_PIN_7
+#define NRF_MOSI_GPIO_Port GPIOA
+#define NRF_CE_Pin GPIO_PIN_4
+#define NRF_CE_GPIO_Port GPIOC
+#define NRF_CS_Pin GPIO_PIN_5
+#define NRF_CS_GPIO_Port GPIOC
+#define NRF_IRQ_Pin GPIO_PIN_0
+#define NRF_IRQ_GPIO_Port GPIOB
 #define MOTOR_1_Pin GPIO_PIN_9
 #define MOTOR_1_GPIO_Port GPIOE
 #define MOTOR_2_Pin GPIO_PIN_11
@@ -65,6 +77,10 @@
 #define MOTOR_3_GPIO_Port GPIOE
 #define MOTOR_4_Pin GPIO_PIN_14
 #define MOTOR_4_GPIO_Port GPIOE
+#define IMU_SDA_Pin GPIO_PIN_6
+#define IMU_SDA_GPIO_Port GPIOB
+#define IMU_SCL_Pin GPIO_PIN_7
+#define IMU_SCL_GPIO_Port GPIOB
 
 /* ########################## Assert Selection ############################## */
 /**

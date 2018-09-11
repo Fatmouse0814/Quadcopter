@@ -54,6 +54,7 @@
 /* USER CODE BEGIN Includes */     
 #include "nrf24.h"
 #include "motor_task.h"
+#include "imu_task.h"
 /* USER CODE END Includes */
 
 /* Variables -----------------------------------------------------------------*/
@@ -62,6 +63,7 @@ osThreadId defaultTaskHandle;
 /* USER CODE BEGIN Variables */
 osThreadId wireless_t ;
 osThreadId motor_t ;
+osThreadId imu_t ;
 /* USER CODE END Variables */
 
 /* Function prototypes -------------------------------------------------------*/
@@ -101,6 +103,9 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+		 	osThreadDef(imuTask, imu_task, osPriorityAboveNormal, 0, 512);
+   imu_t = osThreadCreate(osThread(imuTask), NULL);
+	 
 		  osThreadDef(wirelessTask, WirelessTask, osPriorityNormal, 1, 1024);
 		wireless_t = osThreadCreate(osThread(wirelessTask), NULL);
 				  osThreadDef(motorTask, MotorTask, osPriorityNormal, 1, 128);

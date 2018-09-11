@@ -49,3 +49,4 @@ quadcopter\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 quadcopter\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 quadcopter\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 quadcopter\freertos.o: .\Application\motor_task.h
+quadcopter\freertos.o: .\Application\imu_task.h
