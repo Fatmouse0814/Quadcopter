@@ -50,3 +50,7 @@ quadcopter\motor_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/even
 quadcopter\motor_task.o: ../Inc/tim.h
 quadcopter\motor_task.o: .\NRF10\nrf24.h
 quadcopter\motor_task.o: .\NRF10\sys.h
+quadcopter\motor_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+quadcopter\motor_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+quadcopter\motor_task.o: Application\imu_task.h
+quadcopter\motor_task.o: .\fatmouselib\pid.h
