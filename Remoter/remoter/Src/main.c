@@ -149,9 +149,9 @@ int main(void)
 		{
 			if(ADC_THRUS>3)
 				ADC_THRUS = 3.0f;
-			while(ADC_THRUS> 2)
+			while(ADC_THRUS> 1.75)
 			{
-				ADC_THRUS -= 0.2f;
+				ADC_THRUS -= 0.05f;
 				thrus_speed += 1; 
 			}
 			tmp_buf[3] = '0';
@@ -159,9 +159,9 @@ int main(void)
 		}
 		else
 		{			
-			while(ADC_THRUS< 1)
+			while(ADC_THRUS< 1.25)
 			{
-				ADC_THRUS += 0.2f;
+				ADC_THRUS += 0.05f;
 				thrus_speed += 1; 
 			}
 			tmp_buf[3] = '1';

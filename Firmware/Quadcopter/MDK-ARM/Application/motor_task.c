@@ -9,6 +9,7 @@
 uint32_t motor_time_last;
 motor_type motor;
 int motor_time_ms;
+int thrus_speed;
 pid_t pid_yaw             = {0};
 pid_t pid_pitch           = {0};
 pid_t pid_roll            = {0};
@@ -39,7 +40,8 @@ void MotorTask(void const * argument)
 			pid_calc(&pid_roll_spd , motor.roll_spd_ref, pid_roll_angle.out);
 			motor.vpitch = pid_pitch_spd.out;
 			motor.vroll = pid_roll_spd.out;
-			motor.vthrus = 1300;
+			thrus_speed = buf_rx[4] - 48;
+			motor.vthrus = 1250 + thrus_speed * 10;
 			motor.vyaw = 0;
 			motor_calc(motor.vpitch , motor.vroll , motor.vyaw , motor.vthrus , motor.motor_spd);
 			motor_drive(motor.motor_spd);
@@ -82,9 +84,9 @@ void motor_init(void)
 	
 	// yaw÷·¥Æº∂PID…Ë÷√ 								
   PID_struct_init(&pid_roll_spd, POSITION_PID, 400, 300,
-                  2.0f, 0.0f, 0.0f);
+                  5.0f, 0.0f, 0.0f);
 	PID_struct_init(&pid_roll_angle, POSITION_PID, 250, 200,
-									2.0f, 0.0f, 0.0f);
+									5.0f, 0.0f, 0.0f);
 }
 
 void motor_calc(float vpitch, float vroll, float vyaw, float vthrus, int16_t speed[])
@@ -92,10 +94,10 @@ void motor_calc(float vpitch, float vroll, float vyaw, float vthrus, int16_t spe
 	int16_t motor_rpm[4];
 	 float   max = 0;
 	  //find max item
-	motor_rpm[0] = vthrus;
-	motor_rpm[1] = vthrus + vpitch;	
-	motor_rpm[2] = vthrus + vpitch + vroll;	
-	motor_rpm[3] = vthrus + vroll;	
+	motor_rpm[0] = vthrus + vpitch;
+	motor_rpm[1] = vthrus ;	
+	motor_rpm[2] = vthrus  + vroll;	
+	motor_rpm[3] = vthrus + vpitch + vroll;	
   for (uint8_t i = 0; i < 4; i++)
   {
     if (abs(motor_rpm[i]) > max)

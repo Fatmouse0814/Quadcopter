@@ -3,7 +3,7 @@
 <title>Static Call Graph - [Quadcopter\Quadcopter.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Quadcopter\Quadcopter.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Thu Sep 13 01:05:40 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Thu Sep 13 14:18:36 2018
 <BR><P>
 <H3>Maximum Stack Usage =        840 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -2209,7 +2209,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
-<P><STRONG><a name="[73]"></a>MotorTask</STRONG> (Thumb, 324 bytes, Stack size 16 bytes, motor_task.o(i.MotorTask))
+<P><STRONG><a name="[73]"></a>MotorTask</STRONG> (Thumb, 358 bytes, Stack size 16 bytes, motor_task.o(i.MotorTask))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = MotorTask &rArr; osDelayUntil &rArr; vTaskDelayUntil &rArr; xTaskResumeAll &rArr; xTaskIncrementTick
 </UL>
 <BR>[Calls]<UL><LI><a href="#[183]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osKernelSysTick
@@ -2584,12 +2584,12 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[1a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_get_sensor_type_euler
-<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_norm4
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_check_magnetic_disturbance
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Mag3ofNormalizedLong
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_set_default_number_of_samples
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_generate_fast_nomot
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_cheap_gaussian
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_norm4
 <LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_auto_calibrate
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_process_dmp_quaternion
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_normalize_quat
@@ -4974,10 +4974,10 @@ Local Symbols
 <P><STRONG><a name="[107]"></a>accel_fusion</STRONG> (Thumb, 458 bytes, Stack size 128 bytes, quaternion_supervisor.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = accel_fusion &rArr; inv_q_norm4 &rArr; __hardfp_sqrtf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_norm4
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_multf
+<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_multf
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invertf
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_addf
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_norm4
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrtf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_generate_accel_gyro_quaternion
