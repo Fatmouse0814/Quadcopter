@@ -3,7 +3,7 @@
 <title>Static Call Graph - [Quadcopter\Quadcopter.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image Quadcopter\Quadcopter.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Thu Sep 13 14:18:36 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Thu Sep 13 18:56:02 2018
 <BR><P>
 <H3>Maximum Stack Usage =        840 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -543,7 +543,6 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_compute_bias
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_set_terms
@@ -551,6 +550,7 @@ Global Symbols
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_get_6axis_quaternion
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_process_compass_only_cal
@@ -867,8 +867,6 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 360<LI>Call Chain = inv_perform_9x_fusion &rArr; inv_find_synchronized_compass_angle &rArr; inv_compass_angle &rArr; __hardfp_atan2f
 </UL>
 <BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_quaternion_to_rotation
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_multf
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_get_gyro_sum_of_sqr
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_get_gravity
@@ -878,6 +876,8 @@ Global Symbols
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_set_compass_correction
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_get_6axis_quaternion
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_normalizef
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_multf
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sinf
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_cosf
 </UL>
@@ -1010,8 +1010,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = ComputeAngleVelocity &rArr; inv_q_mult
 </UL>
 <BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_quaternion_to_rotation
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_check_magnetic_disturbance
 </UL>
@@ -1098,30 +1098,30 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_add
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q30_mult
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_normalize_quat
 </UL>
 <BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_generate_accel_gyro_quaternion
 </UL>
 
 <P><STRONG><a name="[110]"></a>inv_set_quaternion</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, quaternion_supervisor.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
+<BR><BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 </UL>
 
 <P><STRONG><a name="[111]"></a>inv_generate_accel_gyro_quaternion</STRONG> (Thumb, 468 bytes, Stack size 104 bytes, quaternion_supervisor.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = inv_generate_accel_gyro_quaternion &rArr; accel_fusion &rArr; inv_q_norm4 &rArr; __hardfp_sqrtf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
 <LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_add
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q30_mult
 <LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_get_linear_accel
 <LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_rotate
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_generate_gyro_quaternion
 <LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_process_dmp_quaternion
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_normalize_quat
@@ -2996,9 +2996,9 @@ Global Symbols
 <P><STRONG><a name="[d7]"></a>inv_compass_angle</STRONG> (Thumb, 162 bytes, Stack size 80 bytes, ml_math_func.o(i.inv_compass_angle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = inv_compass_angle &rArr; __hardfp_atan2f
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q30_mult
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[1a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2f
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_find_synchronized_compass_angle
@@ -3285,11 +3285,11 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[bc]"></a>inv_q30_mult</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, ml_math_func.o(i.inv_q30_mult))
-<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_compass_angle
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_compass_angle
 <LI><a href="#[1f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mlMatrixVectorMult
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_convert_to_body_with_scale
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_fast_nomot_set_gyro_bias
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_auto_calibrate
 <LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_combine_data_calculate_bias
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_generate_accel_gyro_quaternion
@@ -3361,8 +3361,8 @@ Global Symbols
 <P><STRONG><a name="[112]"></a>inv_q_rotate</STRONG> (Thumb, 62 bytes, Stack size 76 bytes, ml_math_func.o(i.inv_q_rotate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = inv_q_rotate &rArr; inv_q_mult
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 </UL>
 <BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_generate_accel_gyro_quaternion
 </UL>
@@ -3625,8 +3625,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MotorTask
 </UL>
 
-<P><STRONG><a name="[1f8]"></a>motor_init</STRONG> (Thumb, 174 bytes, Stack size 24 bytes, motor_task.o(i.motor_init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = motor_init &rArr; PID_struct_init
+<P><STRONG><a name="[1f8]"></a>motor_init</STRONG> (Thumb, 166 bytes, Stack size 16 bytes, motor_task.o(i.motor_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = motor_init &rArr; PID_struct_init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
 <LI><a href="#[193]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_struct_init
@@ -4921,8 +4921,8 @@ Local Symbols
 <P><STRONG><a name="[d5]"></a>inv_find_synchronized_compass_angle</STRONG> (Thumb, 172 bytes, Stack size 48 bytes, fusion_9axis.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = inv_find_synchronized_compass_angle &rArr; inv_compass_angle &rArr; __hardfp_atan2f
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_compass_angle
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_compass_angle
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memmove4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_perform_9x_fusion
@@ -4974,10 +4974,10 @@ Local Symbols
 <P><STRONG><a name="[107]"></a>accel_fusion</STRONG> (Thumb, 458 bytes, Stack size 128 bytes, quaternion_supervisor.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = accel_fusion &rArr; inv_q_norm4 &rArr; __hardfp_sqrtf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_multf
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invertf
+<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invertf
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_addf
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_norm4
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_multf
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrtf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_generate_accel_gyro_quaternion
@@ -5004,10 +5004,10 @@ Local Symbols
 <P><STRONG><a name="[10f]"></a>inv_process_dmp_quaternion</STRONG> (Thumb, 438 bytes, Stack size 88 bytes, quaternion_supervisor.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = inv_process_dmp_quaternion &rArr; __hardfp_sinf &rArr; __mathlib_rredf2
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_invert
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_convert_to_body_with_scale
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_get_gyro_bias
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inv_q_mult
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrtf
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sinf
