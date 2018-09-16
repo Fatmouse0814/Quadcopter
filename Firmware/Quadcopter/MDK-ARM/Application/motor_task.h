@@ -1,8 +1,8 @@
 #ifndef _MOTOR_TASK_H_
 #define _MOTOR_TASK_H_
 #include "stm32f4xx_hal.h"
-#define MAX_MOTOR_RPM 1700
-
+#define MAX_MOTOR_RPM 2000
+#define MIX_MOTOR_RPM 1000
 typedef struct
 {
 	float vpitch;

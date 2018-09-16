@@ -27,6 +27,21 @@ void MotorTask(void const * argument)
   {
 		    motor_time_ms = HAL_GetTick() - motor_time_last;
     motor_time_last = HAL_GetTick();
+		if(buf_rx[0] == 0)
+		{
+			thrus_judge += 1;
+			if(thrus_judge < 20)
+			{
+				buf_rx[0] = 's';
+			}
+			else
+			{
+			}
+		}
+		else
+		{
+			thrus_judge = 0;
+		}
 		if(buf_rx[0] == 's')
 		{
 			motor.pitch_angle_ref = imu.imu_data.pitch;
@@ -35,6 +50,7 @@ void MotorTask(void const * argument)
 			motor.roll_angle_ref = imu.imu_data.roll;
 			motor.roll_angle_fdb = 0;
 			motor.roll_spd_ref = imu.imu_data.gyro_y;
+			
 			pid_calc(&pid_pitch_angle, motor.pitch_angle_ref, motor.pitch_angle_fdb);
 			pid_calc(&pid_pitch_spd , motor.pitch_spd_ref, pid_pitch_angle.out);
 			pid_calc(&pid_roll_angle, motor.roll_angle_ref, motor.roll_angle_fdb);
@@ -42,10 +58,11 @@ void MotorTask(void const * argument)
 			motor.vpitch = pid_pitch_spd.out;
 			motor.vroll = pid_roll_spd.out;
 			thrus_speed = buf_rx[4] - 48;
-			motor.vthrus = 1300 + thrus_speed * 10;
+			motor.vthrus = 1400 + thrus_speed * 10;
 			motor.vyaw = 0;
 			motor_calc(motor.vpitch , motor.vroll , motor.vyaw , motor.vthrus , motor.motor_spd);
 			motor_drive(motor.motor_spd);
+			buf_rx[0] = 0;
 		}
 		else if(buf_rx[0] == 'p')
 		{
@@ -79,32 +96,38 @@ void motor_init(void)
 	TIM1 -> CCR4 = 1000;
 	
 		// pitch轴串级PID设置                     
-  PID_struct_init(&pid_pitch_spd, POSITION_PID, 50, 20,
-                  2.0f, 0.0f, 0.0f);
-	PID_struct_init(&pid_pitch_angle, POSITION_PID, 100, 20,
+  PID_struct_init(&pid_pitch_spd, POSITION_PID, 350, 50,
                   1.0f, 0.0f, 0.0f);
+	PID_struct_init(&pid_pitch_angle, POSITION_PID, 350, 100,
+                  5.0f, 0.0f, 0.0f);
 	
 	// roll轴串级PID设置 								
-  PID_struct_init(&pid_roll_spd, POSITION_PID, 50, 20,
-                  0.1f, 0.0f, 0.0f);
-	PID_struct_init(&pid_roll_angle, POSITION_PID, 100, 20,
-									1.0f, 0.0f, 0.0f);
+  PID_struct_init(&pid_roll_spd, POSITION_PID, 350, 50,
+                  1.0f, 0.0f, 0.0f);
+	PID_struct_init(&pid_roll_angle, POSITION_PID, 350, 100,
+									5.0f, 0.0f, 0.0f);
 }
 
 void motor_calc(float vpitch, float vroll, float vyaw, float vthrus, int16_t speed[])
 {
 	int16_t motor_rpm[4];
 	 float   max = 0;
+	float mix = 2000;
 	  //find max item
-	motor_rpm[0] = vthrus + vpitch;
-	motor_rpm[1] = vthrus ;	
-	motor_rpm[2] = vthrus  + vroll;	
-	motor_rpm[3] = vthrus + vpitch + vroll;	
+	motor_rpm[0] = vthrus - vpitch + vroll;//motor1	FR
+	motor_rpm[1] = vthrus + vpitch - vroll;//motor2 BL	 
+	motor_rpm[2] = vthrus - vpitch - vroll;//motor3 FL
+	motor_rpm[3] = vthrus + vpitch + vroll;//motor4 BR
   for (uint8_t i = 0; i < 4; i++)
   {
     if (abs(motor_rpm[i]) > max)
       max = abs(motor_rpm[i]);
   }
+//	for (uint8_t i = 0; i < 4; i++)
+//  {
+//    if (abs(motor_rpm[i]) < mix)
+//      mix = abs(motor_rpm[i]);
+//  }
   //equal proportion
   if (max > MAX_MOTOR_RPM)
   {
@@ -112,6 +135,12 @@ void motor_calc(float vpitch, float vroll, float vyaw, float vthrus, int16_t spe
     for (uint8_t i = 0; i < 4; i++)
       motor_rpm[i] *= rate;
   }
+//	if (mix < MIX_MOTOR_RPM)
+//  {
+//    float ratem = MIX_MOTOR_RPM / mix;
+//    for (uint8_t i = 0; i < 4; i++)
+//      motor_rpm[i] *= ratem;
+//  }
   memcpy(speed, motor_rpm, 4*sizeof(int16_t));
 }
 void motor_drive(int16_t speed_pwn[])
