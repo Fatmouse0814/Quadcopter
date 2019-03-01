@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=C11 Old Footprint=0805 New Footprint=C 0805
+Change Component Footprint: Designator=C12 Old Footprint=0805 New Footprint=C 0805
+Change Component Footprint: Designator=C13 Old Footprint=0805 New Footprint=C 0805
+Added Room: Name=STM32F407VET6

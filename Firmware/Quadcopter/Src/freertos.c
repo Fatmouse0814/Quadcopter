@@ -108,6 +108,7 @@ void MX_FREERTOS_Init(void) {
 	 
 		  osThreadDef(wirelessTask, WirelessTask, osPriorityNormal, 1, 1024);
 		wireless_t = osThreadCreate(osThread(wirelessTask), NULL);
+		
 				  osThreadDef(motorTask, MotorTask, osPriorityNormal, 1, 128);
 		motor_t = osThreadCreate(osThread(motorTask), NULL);
   /* USER CODE END RTOS_THREADS */

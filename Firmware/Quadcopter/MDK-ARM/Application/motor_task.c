@@ -47,20 +47,31 @@ void MotorTask(void const * argument)
 			motor.pitch_angle_ref = imu.imu_data.pitch;
 			motor.pitch_angle_fdb = 0;
 			motor.pitch_spd_ref =  imu.imu_data.gyro_x;
+			
 			motor.roll_angle_ref = imu.imu_data.roll;
 			motor.roll_angle_fdb = 0;
 			motor.roll_spd_ref = imu.imu_data.gyro_y;
 			
+			motor.yaw_angle_ref = imu.imu_data.yaw;
+			motor.yaw_angle_fdb = 180;
+			motor.yaw_spd_ref = imu.imu_data.gyro_z;
 			pid_calc(&pid_pitch_angle, motor.pitch_angle_ref, motor.pitch_angle_fdb);
 			pid_calc(&pid_pitch_spd , motor.pitch_spd_ref, pid_pitch_angle.out);
 			pid_calc(&pid_roll_angle, motor.roll_angle_ref, motor.roll_angle_fdb);
 			pid_calc(&pid_roll_spd , motor.roll_spd_ref, pid_roll_angle.out);
+			pid_calc(&pid_yaw_angle, motor.yaw_angle_ref, motor.yaw_angle_fdb);
+			pid_calc(&pid_yaw_spd , motor.yaw_spd_ref, pid_yaw_angle.out);
 			motor.vpitch = pid_pitch_spd.out;
 			motor.vroll = pid_roll_spd.out;
 			thrus_speed = buf_rx[4] - 48;
 			motor.vthrus = 1400 + thrus_speed * 10;
-			motor.vyaw = 0;
+			motor.vyaw = pid_yaw_spd.out;
+			
 			motor_calc(motor.vpitch , motor.vroll , motor.vyaw , motor.vthrus , motor.motor_spd);
+//			motor.motor_spd[0] = motor.vthrus;//motor1	FR
+//			motor.motor_spd[1] = motor.vthrus;//motor2 BL	 
+//			motor.motor_spd[2] = motor.vthrus;//motor3 FL
+//			motor.motor_spd[3] = motor.vthrus;//motor4 BR
 			motor_drive(motor.motor_spd);
 			buf_rx[0] = 0;
 		}
@@ -99,13 +110,19 @@ void motor_init(void)
   PID_struct_init(&pid_pitch_spd, POSITION_PID, 350, 50,
                   1.0f, 0.0f, 0.0f);
 	PID_struct_init(&pid_pitch_angle, POSITION_PID, 350, 100,
-                  5.0f, 0.0f, 0.0f);
+                  20.0f, 0.0f, 0.0f);
 	
 	// roll轴串级PID设置 								
   PID_struct_init(&pid_roll_spd, POSITION_PID, 350, 50,
                   1.0f, 0.0f, 0.0f);
 	PID_struct_init(&pid_roll_angle, POSITION_PID, 350, 100,
-									5.0f, 0.0f, 0.0f);
+									20.0f, 0.0f, 0.0f);
+	
+	// yaw轴串级PID设置 								
+  PID_struct_init(&pid_yaw_spd, POSITION_PID, 200, 50,
+                  1.0f, 0.0f, 0.0f);
+	PID_struct_init(&pid_yaw_angle, POSITION_PID, 200, 100,
+									10.0f, 0.0f, 0.0f);
 }
 
 void motor_calc(float vpitch, float vroll, float vyaw, float vthrus, int16_t speed[])
@@ -114,10 +131,10 @@ void motor_calc(float vpitch, float vroll, float vyaw, float vthrus, int16_t spe
 	 float   max = 0;
 	float mix = 2000;
 	  //find max item
-	motor_rpm[0] = vthrus - vpitch + vroll;//motor1	FR
-	motor_rpm[1] = vthrus + vpitch - vroll;//motor2 BL	 
-	motor_rpm[2] = vthrus - vpitch - vroll;//motor3 FL
-	motor_rpm[3] = vthrus + vpitch + vroll;//motor4 BR
+	motor_rpm[0] = vthrus - vpitch + vroll - vyaw;//motor1	FR
+	motor_rpm[1] = vthrus + vpitch - vroll - vyaw;//motor2 BL	 
+	motor_rpm[2] = vthrus - vpitch - vroll + vyaw;//motor3 FL
+	motor_rpm[3] = vthrus + vpitch + vroll + vyaw;//motor4 BR 
   for (uint8_t i = 0; i < 4; i++)
   {
     if (abs(motor_rpm[i]) > max)

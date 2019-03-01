@@ -1,0 +1,4 @@
+Remove Pin=А¶СА-1 From Net=BLUE_TX
+Remove Pin=А¶СА-2 From Net=BLUE_RX
+Remove Pin=А¶СА-3 From Net=GND
+Remove Pin=А¶СА-4 From Net=3.3V

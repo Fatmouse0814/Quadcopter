@@ -1,0 +1,20 @@
+Change Component Designator: OldDesignator=5V NewDesignator=LED6
+Change Component Designator: OldDesignator=LED1 NewDesignator=LED0
+Change Component Designator: OldDesignator=LED2 NewDesignator=LED1
+Change Component Designator: OldDesignator=LED3 NewDesignator=LED2
+Change Component Designator: OldDesignator=LED4 NewDesignator=LED3
+Change Component Designator: OldDesignator=Power NewDesignator=LED5
+Change Component Designator: OldDesignator=RST NewDesignator=KEY1
+Change Component Designator: OldDesignator=VIN NewDesignator=P?
+Added Pin To Net: NetName=LED0 Pin=fatmouse-57
+Added Pin To Net: NetName=LED1 Pin=fatmouse-58
+Added Pin To Net: NetName=LED2 Pin=fatmouse-59
+Added Pin To Net: NetName=LED3 Pin=fatmouse-60
+Change Net Name : Old Net Name=NetLED1_1 New Net Name=NetLED0_1
+Change Net Name : Old Net Name=NetLED2_1 New Net Name=NetLED1_1
+Change Net Name : Old Net Name=NetLED3_1 New Net Name=NetLED2_1
+Change Net Name : Old Net Name=NetLED4_1 New Net Name=NetLED3_1
+Added Member To Class: ClassName=STM32F407VET6 Member=Component C19 Cap
+Added Member To Class: ClassName=STM32F407VET6 Member=Component D1 D Schottky
+Added Member To Class: ClassName=STM32F407VET6 Member=Component SWD Header 4
+Added Room: Name=STM32F407VET6

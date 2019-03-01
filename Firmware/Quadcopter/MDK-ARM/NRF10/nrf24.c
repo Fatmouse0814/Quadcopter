@@ -10,14 +10,14 @@ const u8 RX_ADDRESS[RX_ADR_WIDTH]={0x34,0x43,0x10,0x10,0x01}; //发送地址
 //针对NRF24L01修改SPI1驱动
 void WirelessTask(void const * argument)
 {
-					uint32_t wire_wake_time = osKernelSysTick();
+	//uint32_t wire_wake_time = osKernelSysTick();
   for(;;)
   {
-		    wire_time_ms = HAL_GetTick() - wire_time_last;
-    wire_time_last = HAL_GetTick();
+//		    wire_time_ms = HAL_GetTick() - wire_time_last;
+//    wire_time_last = HAL_GetTick();
 		if(NRF24L01_RxPacket(buf_rx)== 0)
-			printf("0: %c 1: %c 2: %c\n",buf_rx[0],buf_rx[1],buf_rx[2]);	
-	    osDelayUntil(&wire_wake_time, 10);
+			//printf("0: %c 1: %c 2: %c\n",buf_rx[0],buf_rx[1],buf_rx[2]);	
+	    osDelay(10);
   }
 }
 

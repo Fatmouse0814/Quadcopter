@@ -46,14 +46,14 @@
 
 /* USER CODE BEGIN Includes */
 #include "nrf24.h"
+#include "wireless.h"
 // 用于保存转换计算后的电压值	 
 __IO float ADC_ConvertedValueLocal[ADC_NUMOFCHANNEL];
 
 uint32_t ADC_ConvertedValue[ADC_NUMOFCHANNEL];
 float ADC_THRUS;
-uint8_t tmp_buf[33];	
+
 uint16_t i,j,k;
-int16_t thrus_speed;
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -105,15 +105,14 @@ int main(void)
   MX_SPI1_Init();
 
   /* USER CODE BEGIN 2 */
-		NRF24L01_Init();
-		NRF24L01_TX_Mode();
-		HAL_ADCEx_Calibration_Start(&hadc1);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
-		HAL_Delay(1000);
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
-		HAL_ADC_Start_DMA(&hadc1,ADC_ConvertedValue,ADC_NUMOFCHANNEL);  
+	wireless_init();
+	NRF24L01_Init();
+	NRF24L01_TX_Mode();
+	HAL_ADCEx_Calibration_Start(&hadc1);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+	HAL_Delay(1000);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_SET);
+	HAL_ADC_Start_DMA(&hadc1,ADC_ConvertedValue,ADC_NUMOFCHANNEL);  
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -123,7 +122,6 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-		tmp_buf[0] = 's';
 		/* 3.3为AD转换的参考电压值，stm32的AD转换为12bit，2^12=4096，
 				即当输入为3.3V时，AD转换结果为4096 */ 
 		for(i=0;i<4;i++)
@@ -139,12 +137,9 @@ int main(void)
 			ADC_ConvertedValueLocal[3] +=(float)(ADC_ConvertedValue[3]&0xFFF)*3.3/4096; // ADC_ConvertedValue[3]只取最低12有效数据
 			//pitch
 		}
-//		for(k=0;k<4;k++)
-//		{
-//			ADC_ConvertedValueLocal[k] /= 5.00f;
-//		}
 		ADC_THRUS = ADC_ConvertedValueLocal[1] / 5.00f;
-		thrus_speed = 0;
+		remoter_data.thrus_value = 0;
+
 		if(ADC_THRUS> 1.5)
 		{
 			if(ADC_THRUS>3)
@@ -152,62 +147,20 @@ int main(void)
 			while(ADC_THRUS> 1.75)
 			{
 				ADC_THRUS -= 0.05f;
-				thrus_speed += 1; 
+				remoter_data.thrus_value += 1; 
 			}
-			tmp_buf[3] = '0';
-			tmp_buf[4] = 48 + thrus_speed;
 		}
 		else
 		{			
 			while(ADC_THRUS< 1.25)
 			{
 				ADC_THRUS += 0.05f;
-				thrus_speed += 1; 
+				remoter_data.thrus_value += 1; 
 			}
-			tmp_buf[3] = '1';
-			tmp_buf[4] = 48 + thrus_speed;
 		}
-
-		tmp_buf[1] = 'm';
-		tmp_buf[2] = 'm';
-		tmp_buf[0] = 'p';
-		if(HAL_GPIO_ReadPin(GPIOB, SW_L_U_Pin) == 0)
-		{
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
-			tmp_buf[1] = 'd';
-			tmp_buf[0] = 's';
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
-		}
-		if(HAL_GPIO_ReadPin(GPIOB, SW_L_D_Pin) == 0)
-		{
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
-			tmp_buf[1] = 'u';
-			tmp_buf[0] = 's';
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
-		}
-		if(HAL_GPIO_ReadPin(GPIOC, SW_R_U_Pin) == 0)
-		{
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
-			tmp_buf[2] = 'd';
-		}
-		if(HAL_GPIO_ReadPin(GPIOC, SW_R_D_Pin) == 0)
-		{
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
-			tmp_buf[2] = 'u';
-		}
-		if(NRF24L01_TxPacket(tmp_buf) == TX_OK)
-		{
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
-				//	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_6);
-		}
-		else 
-		{
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, GPIO_PIN_RESET);
-	//		printf("Send failed\n");
-		}
-		//HAL_Delay(100);
+		wireless_transmit();
   }
+	
   /* USER CODE END 3 */
 
 }
